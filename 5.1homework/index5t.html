@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>My fifth HTML-homework (table)</title>
+        <link rel="stylesheet" href="css/css5t.css">
+    </head>
+    <style>
+    table {
+      width: 500px;
+      height: 541px;
+      border-collapse: collapse;
+    }
+    td {
+      border: 10px solid black;
+    }
+    table tr:first-child td {
+      border-top: 2px solid black;
+    }
+    table td:first-child {
+      border-left: 2px solid black;
+    }
+    table tr:last-child td {
+      border-bottom: 2px solid black;
+    }
+    table td:last-child {
+      border-right: 2px solid black;
+    }
+    .border-bottom {
+      border-bottom: 2px solid black;
+    }
+
+
+
+    </style>
+    <body>
+      <table>
+    <tr>
+        <td colspan="2"></td>
+        <td colspan="2"></td>
+        <td colspan="2"  bgcolor="#ffe254" height="45px"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td colspan="3" rowspan="2" bgcolor="fd5c3f"></td>
+        <td colspan="2"  bgcolor="#ffe254"></td>
+    </tr>
+    <tr>
+        <td rowspan="2"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td height="60px" bgcolor="#101111"></td>
+        <td bgcolor="#101111"></td>
+        <td></td>
+        <td colspan="2"></td>
+    </tr>
+    <tr>
+        <td class="border-bottom" rowspan="3"  bgcolor="#ffe254"></td>
+        <td height="60px" bgcolor="#101111"></td>
+        <td bgcolor="#101111"></td>
+        <td></td>
+        <td colspan="2" rowspan="2" bgcolor="#074783" width="25px"></td>
+    </tr>
+    <tr>
+        <td class="border-bottom" colspan="2" rowspan="2"></td>
+        <td width="124px" height="25px" bgcolor="#101111"></td>
+    </tr>
+    <tr>
+        <td height="30px" colspan="3"></td>
+    </tr>
+</table>
+    </body>
+    </html>
