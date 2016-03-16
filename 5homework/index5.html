@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>My fifth HTML-homework</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/css5.css">
+    </head>
+    <style>
+    body {
+     background: url(img/backg.png)  no-repeat;
+     color: #fff;
+     background-position: center 0;
+     width: 100%;
+     height: 1044px;
+     margin: 0 auto;
+     background-size: cover;
+    }
+    .face {
+      background: url(img/face.png);
+      display: block;
+      width: 280px;
+      height: 37px;
+      margin: 0 auto;
+    }
+    .face:hover {
+      background: url(img/face2.png);
+    }
+    @font-face {
+        font-family: 'Helvetica Neue Regular';
+        src: url('fonts/helveticaneue-thin-webfont.eot');
+        src: url('fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+             url('fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+             url('fonts/helveticaneue-thin-webfont.woff') format('woff'),
+             url('fonts/helveticaneue-thin-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+    </style>
+
+    <body>
+
+      <nav>
+      <ul>
+      <li><a href="#">Meu YouBike</a></li>
+      <li><a href="#">Vender</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#">Ajuda</a></li>
+      <li class="minhas"><img src="img/line.png" alt="line"><a href="#"><img class="f" src="img/flag.png" alt="flag">Minhas Ofertas</a></li>
+      <li id="ola"><a href="#">Ola! <span>Entrar</span> ou <span>Cadastre-se</span></a></li></nav>
+
+      <section class="wrapper">
+        <div class="small"><div class="cad">Cadastre-se</div></div>
+        <div class="big">
+          <a class="face" href="https://uk-ua.facebook.com/"></a>
+          <img src="img/ou.png" alt="ou">
+          <form action="#">
+          <div><input type="text" name="First Name" placeholder="First Name"></div>
+          <div><input type="text" name="Last Name" placeholder="Last Name"></div>
+          <div><input type="text" name="Email Address" placeholder="Email Address"></div>
+          <div><input type="text" name="Choose Password" placeholder="Choose Password"></div>
+          <div><input type="text" name="Password Confirm" placeholder="Password Confirm"></div>
+          <div><input type="checkbox" id="Sendme"><div class="text">Send me Youbike updates and tips</div></div>
+          <div><input type="submit" value="Create my Account"  id="but"></div>
+          <div class="policy">By clicking the button above, you agree to the Terms of Service<br>Xiew our rivacy Policy.</div>
+        </div>
+      </form>
+    </section>
+
+    </body>
+    </html>
