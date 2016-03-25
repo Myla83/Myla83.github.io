@@ -381,7 +381,7 @@ display: none;
     height: 14px;
     width: 15px;
     margin: 0 10px 2px 0;
-    background-image: url(img/check1.png);
+    background-image: url(../img/check1.png);
     background-repeat: no-repeat;
 }
 #bar2 input[type="checkbox"] + label::before {
