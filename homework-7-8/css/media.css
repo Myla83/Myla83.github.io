@@ -657,7 +657,7 @@ aside img {
 }
 footer {
   padding-top: 66px;
-  height: 140px;
+  height: 130px;
 }
 .footer__line {
   margin-top: -67px;
@@ -1066,6 +1066,6 @@ footer {
   margin-right: 39px;
 }
 .footer__finish {
-  margin: -3.7% 0 0 77%;
+  margin: -3.7% 0 0 75%;
 }
 }

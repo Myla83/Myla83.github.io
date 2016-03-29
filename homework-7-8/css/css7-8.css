@@ -291,18 +291,18 @@ margin-bottom: 22px;
 margin-top: 23px;
 }
 footer {
-  background: url(../img/footerimg.png);
+  background: url(../img/footernew.png)  50% 0 no-repeat;
   height: 150px;
   width: auto;
   clear: both;
   padding-top: 42px;
 
 }
-.footer__line {
-  background: url(../img/line.png);
+/*.footer__line {
+  background: url(../img/line1.png);
   height: 8px;
   margin-top: -45px;
-}
+}*/
 .footer__finish {
 
   margin: 0 3% 0 3%;
