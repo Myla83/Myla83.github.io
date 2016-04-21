@@ -3,11 +3,11 @@ $(function() {
 
   });
   $('.jcarousel-prev').jcarouselControl({
-    target: '+=1'
+    target: '-=1'
 });
 
 $('.jcarousel-next').jcarouselControl({
-    target: '-=1'
+    target: '+=1'
 });
 
  $('.jcarousel').jcarouselAutoscroll({
@@ -126,32 +126,32 @@ catch(e)
 //Задание №4 Создать анимированную выпадающую двухуровневую меню.
 
 $(function() {
-    $( '.li3' ).hover(
+    $( '.submenu' ).hover(
         function(){
-            $(this).children('.nav3').slideDown(200);
+            $(this).children('.submenu-child').slideDown(200);
         },
         function(){
-            $(this).children('.nav3').slideUp(200);
+            $(this).children('.submenu-child').slideUp(200);
         }
     );
 });
 $(function() {
-    $( '.li34' ).hover(
+    $( '.submenu1' ).hover(
         function(){
-            $(this).children('.nav34').slideDown(200);
+            $(this).children('.submenu-child1').slideDown(200);
         },
         function(){
-            $(this).children('.nav34').slideUp(200);
+            $(this).children('.submenu-child1').slideUp(200);
         }
     );
 });
 $(function() {
-    $( '.li342' ).hover(
+    $( '.submenu2' ).hover(
         function(){
-            $(this).children('.nav342').slideDown(200);
+            $(this).children('.submenu-child2').slideDown(200);
         },
         function(){
-            $(this).children('.nav342').slideUp(200);
+            $(this).children('.submenu-child2').slideUp(200);
         }
     );
 });

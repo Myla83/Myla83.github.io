@@ -84,7 +84,7 @@ nav {
 nav ul li {
   display: inline-block;
 }
-.nav3 {
+.submenu-child {
 
   padding: 0;
   background-color: rgb(225,75,75);
@@ -93,7 +93,7 @@ nav ul li {
   position: absolute;
   top: 60px;
 }
-.nav3 li {
+.submenu-child li {
   width: 200px;
   border-bottom: solid 1px rgb(200,50,50);
 }
@@ -117,15 +117,15 @@ nav a {
 nav a:hover {
   color: black;
 }
-.nav3,
-.nav34,
-.nav342 {
+.submenu-child,
+.submenu-child1,
+.submenu-child2 {
 display: none;
 }
-.nav3 li a {
+.submenu-child li a {
   padding: 0 20px 0 -50px;
 }
-.nav34 {
+.submenu-child1 {
 
   padding: 0;
   background-color: rgb(225,75,75);
@@ -135,7 +135,7 @@ display: none;
   top: 123px;
   left: 195px;
 }
-.nav342 {
+.submenu-child2 {
   padding: 0;
   background-color: rgb(225,75,75);
   width: 200px;
@@ -144,7 +144,7 @@ display: none;
   top: 41px;
   left: 195px;
 }
-.li3:after {
+.submenu:after {
 content: "\25BC";
 font-size: .5em;
 color: white;
@@ -153,7 +153,7 @@ top: 42px;
 position: absolute;
 display: block;
 }
-.li34:after {
+.submenu1:after {
 content: "\25b6";
 font-size: .7em;
 color: white;
@@ -162,7 +162,7 @@ top: 135px;
 position: absolute;
 display: block;
 }
-.li342:after {
+.submenu2:after {
 content: "\25b6";
 font-size: .7em;
 color: white;
