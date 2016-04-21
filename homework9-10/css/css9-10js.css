@@ -1,0 +1,173 @@
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+.wrap_jcarousel{
+  width: 341px;
+  margin: 10px auto;
+  position: relative;
+}
+
+/*Задание №3 (Подключить к странице нестандартные чекбоксы с помощью jquery).*/
+.niceCheck {
+width: 17px;
+height: 17px;
+display: inline-block;
+cursor: pointer;
+background: url(../img/checkbox-sprite.png) 0 0;
+overflow: hidden;
+}
+.niceChecked {
+    background-position: 0 -17px;
+}
+
+ input {
+
+opacity: 0;
+}
+.niceCheckDisabled {
+    background-image: url(../img/checkbox-sprite.png);
+}
+
+
+form {
+  margin: 50px;
+  background: #99CCFF;
+  padding: 10px;
+}
+
+/*Задание №3 (Подключить к странице нестандартные чекбоксы с помощью css).*/
+
+.main2 input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+ .main2 label {
+	cursor: pointer;
+}
+.main2 label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../img/checkbox-sprite.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+
+.main2 input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+
+/*Задание №4 Создать анимированную выпадающую двухуровневую меню.*/
+nav {
+  background-color: rgb(255,100,100);
+  padding: 10px 0;
+  margin-bottom: 500px;
+  height: 60px;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+}
+.nav3 {
+
+  padding: 0;
+  background-color: rgb(225,75,75);
+  width: 200px;
+  height: 205px;
+  position: absolute;
+  top: 60px;
+}
+.nav3 li {
+  width: 200px;
+  border-bottom: solid 1px rgb(200,50,50);
+}
+
+nav li {
+  list-style: none;
+
+
+}
+nav li a {
+  text-decoration: none;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    line-height: 40px;
+    padding: 0 12px;
+    margin: 0 12px;
+}
+nav a:hover {
+  color: black;
+}
+.nav3,
+.nav34,
+.nav342 {
+display: none;
+}
+.nav3 li a {
+  padding: 0 20px 0 -50px;
+}
+.nav34 {
+
+  padding: 0;
+  background-color: rgb(225,75,75);
+  width: 200px;
+  height: 205px;
+  position: absolute;
+  top: 123px;
+  left: 195px;
+}
+.nav342 {
+  padding: 0;
+  background-color: rgb(225,75,75);
+  width: 200px;
+  height: 205px;
+  position: absolute;
+  top: 41px;
+  left: 195px;
+}
+.li3:after {
+content: "\25BC";
+font-size: .5em;
+color: white;
+left: 288px;
+top: 42px;
+position: absolute;
+display: block;
+}
+.li34:after {
+content: "\25b6";
+font-size: .7em;
+color: white;
+left: 185px;
+top: 135px;
+position: absolute;
+display: block;
+}
+.li342:after {
+content: "\25b6";
+font-size: .7em;
+color: white;
+left: 185px;
+top: 54px;
+position: absolute;
+display: block;
+}

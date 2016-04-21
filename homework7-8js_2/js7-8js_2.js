@@ -5,7 +5,8 @@ var $lastName = $('#lastname');
 var $adress = $('#address');
 var $button = $('button');
 
-$firstName.hover(function(){$('.firstname').css({
+$firstName.hover(function(){
+  $('.firstname').css({
     opacity: 1
 
 })}, function() {$('.firstname').css({

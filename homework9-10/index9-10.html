@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework_js9-10</title>
+  <link rel="stylesheet" href="css/css9-10js.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/jquery.selectbox.css">
+  <script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+  <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+  <script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+  <script src="js/jquery.jcarousel-control.js"></script>
+  <script src="js/jquery.jcarousel-autoscroll.js"></script>
+  <script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+  <script src="js/js9-10js.js"></script>
+
+</head>
+<body>
+  <div class="wrap_jcarousel">
+  <div class="jcarousel">
+      <ul>
+          <li><img src="img/1.jpg"></li>
+          <li><img src="img/2.jpg"></li>
+          <li><img src="img/3.jpg"></li>
+      </ul>
+  </div>
+  <a class="jcarousel-prev" href="#">Prev</a>
+  <a class="jcarousel-next" href="#">Next</a>
+  <p class="jcarousel-pagination"></p>
+</div>
+<br>
+<br>
+<br>
+<br>
+Задание №2 (выбрала jQuery custom selectbox)
+<div class="demoTarget">
+  <div class="jquery-selectbox jquery-custom-selectboxes-replaced selecthover" style="width: 201.16px;">
+    <div class="jquery-selectbox-moreButton"></div>
+    <div class="jquery-selectbox-list jquery-custom-selectboxes-replaced-list" style="width: 196px; height: 9em; display: block; ">
+      <span class="jquery-selectbox-item value--- item-0">Фрукты:</span>
+      <span class="jquery-selectbox-item value-01 item-1">Яблоко</span>
+      <span class="jquery-selectbox-item value-02 item-2">Киви</span>
+      <span class="jquery-selectbox-item value-03 item-3">Апельсин</span>
+      <span class="jquery-selectbox-item value-04 item-4">Банан</span>
+      <span class="jquery-selectbox-item value-05 item-5">Манго</span>
+      </div>
+      <span class="jquery-selectbox-currentItem">Фрукты:</span>
+      <select id="default-usage-select" style="display: none;">
+      <option value="--">Фрукты:</option>
+      <option value="01">Яблоко</option>
+      <option value="02">Киви</option>
+      <option value="03">Апельсин</option>
+      <option value="04">Банан</option>
+      <option value="05">Манго</option>
+    </select></div>
+						<div class="clr"></div>
+					</div>
+<br>
+<br>
+<br>
+<br>
+Задание №3 (Подключить к странице нестандартные чекбоксы с помощью jquery).
+<div class="main">
+  <form action="#">
+    <div><label for="ch1">label 1</label><input type="checkbox" class="niceCheck" id="ch1" tabindex="1" /> </div>
+  <div><label for="ch2">label 2</label><input type="checkbox" class="niceCheck" checked="checked" id="ch2" tabindex="2" value="2" /></div>
+  <div><label for="ch3">label 3</label><input type="checkbox" class="niceCheck" id="ch3" checked="checked" disabled="disabled" /></div>
+
+</form>
+</div>
+(Подключить к странице нестандартные чекбоксы с помощью css).
+<div class="main2">
+  <form action="#">
+    <input type="checkbox" id="test-check1">
+    <label for="test-check1">Чекбокс 1:</label><br>
+    <input type="checkbox" id="test-check2">
+    <label for="test-check2">Чекбокс 2:</label><br>
+    <input type="checkbox" id="test-check3">
+    <label id="test-check3" for="test-check3">Чекбокс 3:</label>
+</form>
+</div>
+Задание №4 Создать анимированную выпадающую двухуровневую меню, как на примере. Плагины для меню не используем, логика появления и анимирования должна быть написана вами. Так же, во время анимации желательно менять цвет фона появившейся менюшки.
+<nav>
+  <ul class="nav">
+  <li><a href="#">Nav 1</a></li>
+  <li><a href="#">Nav 2</a></li>
+  <li class="li3"><a href="#">Nav 3</a>
+  <ul class="nav3">
+    <li><a href="#">Nav 3.1</a></li>
+    <li><a href="#">Nav 3.2</a></li>
+    <li><a href="#">Nav 3.3</a></li>
+    <li class="li34"><a href="#">Nav 3.4</a>
+    <ul class="nav34">
+      <li><a href="#">Nav 3.4.1</a></li>
+      <li class="li342"><a href="#">Nav 3.4.2</a>
+      <ul class="nav342">
+        <li><a href="#">Nav 3.4.2.1</a></li>
+        <li><a href="#">Nav 3.4.2.2</a></li>
+        <li><a href="#">Nav 3.4.2.3</a></li>
+        <li><a href="#">Nav 3.4.2.4</a></li>
+        <li><a href="#">Nav 3.4.2.5</a></li>
+      </ul></li>
+      <li><a href="#">Nav 3.4.3</a></li>
+      <li><a href="#">Nav 3.4.4</a></li>
+      <li><a href="#">Nav 3.4.5</a></li>
+    </ul></li>
+    <li><a href="#">Nav 3.5</a></li>
+  </ul></li>
+  <li><a href="#">Nav 4</a></li>
+  <li><a href="#">Nav 5</a></li>
+</ul>
+</nav>
+</body>
+</html>
