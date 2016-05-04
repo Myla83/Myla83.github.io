@@ -1,115 +1,66 @@
-var ol = document.createElement('ol');
-ol.classList.add('form');
-var parentElem = document.body;
-parentElem.insertBefore(ol, parentElem.children[0]);
+var test = {
+  questions: [
+  {question: 'Вопрос № 1',
+    answers: [
+      {answer: 'Вариант ответа № 1'},
+      {answer: 'Вариант ответа № 2'},
+      {answer: 'Вариант ответа № 3'}
+    ]
+  },
+  {question: 'Вопрос № 2',
+      answers: [
+        {answer: 'Вариант ответа № 1'},
+        {answer: 'Вариант ответа № 2'},
+        {answer: 'Вариант ответа № 3'}
+      ]
+    },
+    {question: 'Вопрос № 3',
+    answers: [
+      {answer: 'Вариант ответа № 1'},
+      {answer: 'Вариант ответа № 2'},
+      {answer: 'Вариант ответа № 3'}
+    ]
+  }],
+  createQuestions: function () {
+    var nameText = document.createTextNode("Тест по программированию");
+    var header = document.createElement("h2");
+    header.appendChild(nameText);
+    document.body.appendChild(header);
+		
+      for (var i = 0; i < test.questions.length; i++) {
+        var question = (i+1) + '. ' + test.questions[i].question;
+        var questionOne = document.createTextNode(question);
+        var questionOneP = document.createElement("p");
+        document.body.appendChild(questionOneP);
+        questionOneP.appendChild(questionOne);
+          for (var key in test.questions[i].answers) {
+          var answer = test.questions[i].answers[key].answer;
+          var container = document.createElement('div');
+          var checkbox = document.createElement('input');
+          checkbox.type = "checkbox";
+          checkbox.id = "answer-" + (+key + 1) + '-' + (+i + 1);
+          var label = document.createElement('label');
+          label.text = "answer-" + (+key + 1) + '-' + (+i + 1);
+          label.appendChild(document.createTextNode(answer));
+          document.body.appendChild(container);
+          container.appendChild(checkbox);
+          container.appendChild(label);
+          }
+        }
+      },
+      createButton: function () {
+        var buttonBefore = document.createElement('br');
+        document.body.appendChild(buttonBefore);
 
-var text = 'Тест по программированию';
+        var button = document.createElement('div');
+        button.id = 'button';
+        document.body.appendChild(button);
 
-var question1 = 'Вопрос №1';
-var question2 = 'Вопрос №2';
-var question3 = 'Вопрос №3';
-
-var answer1 = 'Вариант ответа №1';
-var answer2 = 'Вариант ответа №2';
-var answer3 = 'Вариант ответа №3';
-
-var buttonText = 'Проверить мои результаты';
-
-var ol = {
-	zagolovok : function(text) {
-    var test = document.createElement('h3');
-    test.classList.add('test');
-    test.innerHTML = text;
-    var parentElem = document.body;
-    parentElem.insertBefore(test, parentElem.children[0]);
-
-},
-
-	theFirstQuestion : function(question1) {
-	var li = document.createElement('li');
-	li.classList.add('form-item');
-	li.innerHTML = question1;
-	var liParent = document.querySelector('.form');
-	liParent.appendChild(li);
-	ol.answers(answer1, answer2, answer3);
-},
-
-    answers : function(answer1, answer2, answer3) {
-
-    var label = document.createElement('label');
-    label.classList.add('answers');
-	var liParent = document.querySelector('.form');
-	liParent.appendChild(label);
-
-	var check = document.createElement('input');
-	check.setAttribute('type', 'checkbox');
-	label.insertBefore(check, label.children[0]);
-
-	var labelText = document.createElement('span');
-	labelText.innerHTML = answer1;
-	label.insertBefore(labelText, label.children[1]);
-
-	var br = document.createElement('br');
-	label.insertBefore(br, label.children[2]);
-
-	var label = document.createElement('label');
-	label.classList.add('answers');
-	var liParent = document.querySelector('.form');
-	liParent.appendChild(label);
-
-	var check = document.createElement('input');
-	check.setAttribute('type', 'checkbox');
-	label.insertBefore(check, label.children[0]);
-
-	var labelText = document.createElement('span');
-	labelText.innerHTML = answer2;
-	label.insertBefore(labelText, label.children[1]);
-
-	var br = document.createElement('br');
-	label.insertBefore(br, label.children[2]);
-
-	var label = document.createElement('label');
-	label.classList.add('answers');
-	var liParent = document.querySelector('.form');
-	liParent.appendChild(label);
-
-	var check = document.createElement('input');
-	check.setAttribute('type', 'checkbox');
-	label.insertBefore(check, label.children[0]);
-
-	var labelText = document.createElement('span');
-	labelText.innerHTML = answer3;
-	label.insertBefore(labelText, label.children[1]);
-},
-	theSecondQuestion : function(question2) {
-    var li = document.createElement('li');
-    li.classList.add('form-item');
-	  li.innerHTML = question2;
-	  var liParent = document.querySelector('.form');
-	  liParent.appendChild(li);
-	  ol.answers(answer1, answer2, answer3);
-},
-	theThirdQuestion : function(question3) {
-    var li = document.createElement('li');
-    li.classList.add('form-item');
-	  li.innerHTML = question3;
-	  var liParent = document.querySelector('.form');
-	  liParent.appendChild(li);
-	  ol.answers(answer1, answer2, answer3);
-},
-    testCheck : function(buttonText) {
-    var button = document.createElement('button');
-    button.classList.add('button');
-    button.innerHTML = buttonText;
-    var parentElem = document.body;
-    parentElem.appendChild(button);
+        var newButton = document.createElement("input");
+        newButton.type = "submit";
+        newButton.value = "Проверить мои результаты";
+        document.getElementById('button').appendChild(newButton);
+      }
     }
-}
-
-ol.zagolovok(text);
-ol.theFirstQuestion(question1);
-ol.theSecondQuestion(question2);
-ol.theThirdQuestion(question3);
-ol.testCheck(buttonText);
-
-console.log(ol);
+test.createQuestions()
+test.createButton()
