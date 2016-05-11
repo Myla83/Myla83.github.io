@@ -2,10 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Homework 13-14</title>
+  <link rel="stylesheet" type="text/css" href="css13-14.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="js/tmpl.js"></script>
   <script src="js/js13-14.js"></script>
+
 </head>
 <body>
+<h1>Тест по программированию</h1>
+<script type="html" id="test">
+  <div class="box">
+  <ol><% for (var i = 0; i < data.length; i++) { %>
+    <li><%= data[i].question %></li>
+    <ul><% for (var e = 0; e < data[i].answer.length; e++) { %>
+    <li><input type="radio" name="<%= data[i].name %>" class="checkbox" value="<%= data[i].check[e] %>"><%= data[i].answer[e] %></li>
+<% }; %></ul>
+  <% }; %></ol></div>
+</script>
+<button class="check">Проверить мои результаты</button>
+<div class="modal-window">
+  <p class="modal-window__message"></p>
+  <button class="modal-window__button">Ok</button>
+</div>
 
 </body>
 </html>
