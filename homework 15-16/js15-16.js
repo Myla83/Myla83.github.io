@@ -1,4 +1,4 @@
-/*function GoogleCallback(func, data){
+function GoogleCallback(func, data){
 	window[func](data);
 };
 
@@ -20,7 +20,7 @@ $('form').on('submit', function(){
     return false;
 });
 
-});*/
+});
 
 var human = {
   name: 'Tanya',
