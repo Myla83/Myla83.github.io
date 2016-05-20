@@ -6,8 +6,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/css7-8.css">
         <link rel="stylesheet" href="css/media.css">
-        <link href='https://fonts.googleapis.com/css?family=Open+Sans'
-        rel='stylesheet' type='text/css'>
+        <link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
 
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,22 +20,7 @@
         <link rel="stylesheet" href="css/ie9+.css">
         <![endif]-->
     </head>
-    <style>
-    @font-face {
-        font-family: 'league_gothicregular';
-        src: url('fonts/league_gothic-webfont.eot');
-        src: url('fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
-             url('fonts/league_gothic-webfont.woff2') format('woff2'),
-             url('fonts/league_gothic-webfont.woff') format('woff'),
-             url('fonts/league_gothic-webfont.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
 
-    }
-
-
-
-     </style>
     <body>
 
       <header>
@@ -54,13 +38,24 @@
        <li class="menu__item5"><a class="menu__link" href="#">LOREM IPSUM</a></li>
        <li class="menu__item6"><a class="menu__link" href="#">DOLOR SIT AMET</a></li>
        </ul>
-      <div class="header__home"><div class="header__home__border"><a href="#">
+
+       <ul class="menu_dropdown">
+        <li class="menu__item"><div class="border-home"><a class="menu__link" href="#">HOME</a></div>
+        <ul><li class="menu__item2"><a class="menu__link" href="#">ABOUT</a></li>
+        <li class="menu__item3"><a class="menu__link" href="#">BLOG</a></li>
+        <li class="menu__item4"><a class="menu__link" href="#">PRODUCTS</a></li>
+        <li class="menu__item5"><a class="menu__link" href="#">LOREM IPSUM</a></li>
+        <li class="menu__item6"><a class="menu__link" href="#">DOLOR SIT AMET</a></li>
+      </ul>
+        </li>
+        </ul>
+      <!--<div class="header__home"><div class="header__home__border"><a href="#">
         <img src="img/home.png" alt="HOME"></a></div>
-      </div>
+      </div>-->
       <div class="header__slider">
       <div class="header__slider__back">
 
-      <div class="left_strel"><a href="#"><img src="img/strelochka-left.png"></a></div>
+      <div class="left_strel"><a href="#"><img src="img/strelochka-left.png" alt="Left"></a></div>
 
       <div class="Text"><h1>Lorem Ipsum Dolor</h1>
       <h2>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</h2>
@@ -70,7 +65,7 @@
         lacus id semper. In odio nunc, imperdiet eget aliquam quis,
         euismod id lectus. Nulla interdum arcu et felis aliquam a tempus
         lectus lobortis.</p></div>
-      <div class="right_strel"><a href="#"><img src="img/strelochka-right.png"></a></div>
+      <div class="right_strel"><a href="#"><img src="img/strelochka-right.png" alt="Right"></a></div>
 
       <div class="header__slider__back__iphone"></div></div>
 
@@ -95,32 +90,34 @@
       </header>
       <main>
         <div class="main__articles">
-          <div class="wrapper">
+        <div class="wrapper">
+
+
         <div class="main__articles--320">
-          <div>
-          <article>
-            <img src="img/foto.png">
+          <div class="article">
+
+            <img src="img/foto.png" alt="Foto">
             <div class="main__articles__box">
           <div class="main__articles__box__name"><span class='main__articles__pingbuller'>PINGBULLER</span>
           <span class='main__articles__starts'>STARTS HERE</span></div>
-          <div class="main__articles__first-article">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</div></article></div>
-             <img class="main__articles__points" src="img/points2.png">
-        </div>
+          <div class="main__articles__first-article">“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”</div></div>
+             <img class="main__articles__points" src="img/points2.png" alt="Point">
+        </div></div>
         <aside>
         RECENT UPDATES<br>
-        <a href="#"><img src="img/krugok1.png"></a>
+        <a href="#"><img src="img/krugok1.png" alt="krugok"></a>
         <div class="aside__post">
           <div class="aside__post__a"><a href="#">Nunc turpis neque feugiat eget</a></div><br>
           <div class="aside__post__text">Posted by Admin on March 13 2012 in Recent News</div></div>
-          <a href="#"><img class="aside__post__img2" src="img/krugok2.png"></a>
+          <a href="#"><img class="aside__post__img2" src="img/krugok2.png" alt="krugok"></a>
           <div class="aside__post">
           <div class="aside__post__a"><a href="#">Nunc turpis neque feugiat eget</a></div><br>
           <div class="aside__post__text">Posted by Admin on March 13 2012 in Category</div></div>
-            <a href="#"><img class="aside__post__img3" src="img/krugok3.png"></a>
+            <a href="#"><img class="aside__post__img3" src="img/krugok3.png" alt="krugok"></a>
             <div class="aside__more__last-post">
             <div class="aside__post__a"><a href="#">Nunc turpis neque feugiat eget</a></div><br>
             <div class="aside__post__text">Posted by Admin on March 13 2012 in Blog Updates</div></div>
-        <a class="aside__more" href="#">MORE BLOG POSTS</a><a class="aside__read" href="#">READ MORE HERE</a></div>
+        <a class="aside__more" href="#">MORE BLOG POSTS</a><a class="aside__read" href="#">READ MORE HERE</a>
           </aside>
         </div>
         </div>
@@ -129,12 +126,12 @@
 
           <div class="main__logo__img">
 
-            <img class="main__logo__img__img1" src="img/logo_1.png">
-            <img class="main__logo__img__img2" src="img/logo_2.png">
-            <img class="main__logo__img__img3" src="img/logo_3.png">
-            <img class="main__logo__img__img4" src="img/logo_4.png">
-            <img class="main__logo__img__img5" src="img/logo_5.png">
-            <img class="main__logo__img__img6" src="img/logo_6.png">
+            <img class="main__logo__img__img1" src="img/logo_1.png" alt="Logo">
+            <img class="main__logo__img__img2" src="img/logo_2.png" alt="Logo">
+            <img class="main__logo__img__img3" src="img/logo_3.png" alt="Logo">
+            <img class="main__logo__img__img4" src="img/logo_4.png" alt="Logo">
+            <img class="main__logo__img__img5" src="img/logo_5.png" alt="Logo">
+            <img class="main__logo__img__img6" src="img/logo_6.png" alt="Logo">
             </div>
         </div></div>
         <div class="main__no320">

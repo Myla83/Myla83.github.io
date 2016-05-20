@@ -9,9 +9,21 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../fonts/league_gothic-webfont.eot');
+    src: url('../fonts/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/league_gothic-webfont.woff2') format('woff2'),
+         url('../fonts/league_gothic-webfont.woff') format('woff'),
+         url('../fonts/league_gothic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 body {
   background-color: #f9f9f9;
+  overflow-x: hidden;
 }
 
 header {
@@ -36,6 +48,7 @@ header {
 .header__home a img:hover {
   background: url(../img/home--hover.png);
 }
+
 .header__home__border {
   width: 33px;
   height: 27px;
@@ -86,6 +99,9 @@ header {
   margin-bottom: 67px;
   margin-left: 37.5%;
   margin-right: 37%;
+}
+.header__slider__points img {
+  margin-top: 42px;
 }
 .header__block {
   background: linear-gradient(to top, #372a3e, #745082);
@@ -139,11 +155,11 @@ background: url(../img/sprites.png) 0 0 no-repeat;
 background: url(../img/sprites.png) 0 -19px no-repeat;
 }
 
-article {
+.article {
 position: relative;
 padding-top: 70px;
 }
-article img {
+.article img {
 position: absolute;
 top: 87px;
 left: 16px;
@@ -184,7 +200,7 @@ left: 16px;
   margin-left: 35px;
 }
 .main__articles__points {
-  margin-top: 24px;
+  margin-top: 274px;
   margin-left: 43.6%;
   margin-right: 43%;
 }

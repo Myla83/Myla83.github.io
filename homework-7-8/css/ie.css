@@ -194,7 +194,7 @@ max-width: 960px;
   width: 320px;
   float: left;
 }
-article img {
+.article img {
   position: absolute;
   top: 89px;
   left: -5px;
@@ -353,7 +353,7 @@ aside img {
 .main__no320_1 span {
   font-family: Georgia, sans-serif;
   font-style: italic;
-  font-weight: 16px;
+
   color: #c5c5c5;
   margin-left: -4px;
 }
