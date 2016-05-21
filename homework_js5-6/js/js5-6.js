@@ -1,4 +1,94 @@
-//объявляем переменные
+function Stopwatch(elem) {
+var time = 0;
+var interval;
+var offset;
+
+function update() {
+	if (this.isOn) {
+	time += delta();
+	}
+
+	var formattedTime = timeFormatter(time);
+	elem.textContent = formattedTime;
+	console.log(formattedTime);
+}
+
+function delta() {
+var now = Date.now();
+var timePassed = now - offset;
+offset = now;
+return timePassed;
+}
+// 12345
+// hours 0
+// minutes 1
+// seconds 2
+// millisec 345
+// 00:01:02:345
+function timeFormatter(timeInMilliseconds) {
+	var time = new Date(timeInMilliseconds);
+	var hours = time.getHours().toString();
+	var minutes = time.getMinutes().toString();
+	var seconds = time.getSeconds().toString();
+	var milliseconds = time.getMilliseconds().toString();
+
+	if (hours.length < 2) {
+		hours = '0' + hours - '3';
+	}
+
+	if (minutes.length < 2) {
+		minutes = '0' + minutes;
+	}
+
+	if (seconds.length < 2) {
+		seconds = '0' + seconds;
+	}
+
+	while (milliseconds.length < 3) {
+		milliseconds = '0' + milliseconds;
+}
+
+return hours + ' : ' + minutes + '  :' + seconds + ' . ' + milliseconds;
+}
+
+this.isOn = false;
+
+this.start = function() {
+if (!this.isOn) {
+	interval = setInterval(update.bind(this), 10);
+	offset = Date.now();
+	this.isOn = true;
+}
+	};
+
+this.stop = function() {
+if (this.isOn) {
+	clearInterval(interval);
+	interval = null;
+	this.isOn = false;
+}
+};
+
+this.reset = function() {
+	if (!this.isOn) {
+		time = 0;
+		update();
+	}
+
+};
+
+}
+
+
+
+
+
+
+
+
+
+
+/*//объявляем переменные
 var base = 60;
 var clocktimer,dateObj,dh,dm,ds,ms;
 var readout='';
@@ -52,4 +142,4 @@ function pause() {
 	} else { if(show==true) {
 	show=false;
 	} else { show=true; } }
-}
+}*/

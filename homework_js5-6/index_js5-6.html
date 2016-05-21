@@ -3,15 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Homework_js5-6</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/css5-6.css">
 
 </head>
 <body>
-  <form name=TestForm>
+<!--<form name=TestForm>
   <input name=stopwatch size=9 value="00:00:00.00"><br>
   <input type=button value="Start" onclick="pause()">
 	<input type=button value="Clear" onclick="clearСlock()">
 
-</form>
-<script language="JavaScript" type="text/javascript" src="js5-6.js"></script>
+</form>-->
+<h1 id="timer">0 : 00 :00 . <span>000</span></h1>
+
+<button id="toggle" class="btn btn-large btn-success">Start</button>
+<button id="reset" class="btn btn-large btn-success">Clear</button>
+
+
+<script language="JavaScript" type="text/javascript" src="js/js5-6.js"></script>
+<script language="JavaScript" type="text/javascript" src="js/getelem.js"></script>
 </body>
 </html>
