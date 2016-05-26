@@ -27,13 +27,13 @@ return timePassed;
 // 00:01:02:345
 function timeFormatter(timeInMilliseconds) {
 	var time = new Date(timeInMilliseconds);
-	var hours = time.getHours().toString();
+	var hours = time.getUTCHours().toString();
 	var minutes = time.getMinutes().toString();
 	var seconds = time.getSeconds().toString();
 	var milliseconds = time.getMilliseconds().toString();
 
 	if (hours.length < 2) {
-		hours = '0' + hours - '3';
+		hours = '0' + hours;
 	}
 
 	if (minutes.length < 2) {
