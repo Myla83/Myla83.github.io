@@ -56,7 +56,8 @@ header {
   padding: 0 8px 0 6px;
 }
 .header__slider {
-  margin-top: 104px;
+  margin-top: 189px;
+
 }
 .header__slider a img {
   margin-bottom: 8px;
@@ -72,20 +73,23 @@ header {
 .Text {
   width: 230px;
   float: left;
-  margin-top: 13px;
-  margin-left: 36px;
+  margin-top: -15px;
+  margin-left: 21px;
+  margin-right: 7px;
 }
 .left_strel {
   width: 26px;
   height: 45px;
   float: left;
-  margin-top: 25px;
+  margin-top: -4px;
+
 }
 .right_strel {
   width: 26px;
   height: 45px;
   float: left;
-  margin-top: 25px;
+  margin-top: -4px;
+
 }
 .header__slider h2 {
   font-size: 18px;
@@ -95,13 +99,13 @@ header {
   margin-top: -4px;
   }
 .header__slider__points {
-  margin-top: 132px;
+  margin-top: 152px;
   margin-bottom: 67px;
   margin-left: 37.5%;
   margin-right: 37%;
 }
 .header__slider__points img {
-  margin-top: 42px;
+  margin-top: 72px;
 }
 .header__block {
   background: linear-gradient(to top, #372a3e, #745082);
