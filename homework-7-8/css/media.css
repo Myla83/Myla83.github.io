@@ -266,12 +266,14 @@ left:-9999px;
   height: 270px;
   background-image: url(../img/iphone.png);
   position: absolute;
-  top: -87px;
+  top: -117px;
   left: 244px;
   z-index: 1;
 }
 
-
+/*.header__slider {
+  margin-top: -100px;
+}*/
 .header__home {
   transform: scale(0);
   height: 0;
@@ -297,7 +299,7 @@ left:-9999px;
   z-index: 1;
   }
 .Text {
-  margin-top: -3px;
+  margin-top: -93px;
   margin-left: 45px;
   z-index: 2;
   position: absolute;
@@ -314,7 +316,7 @@ left:-9999px;
   overflow: hidden;
 }
 .right_strel {
-  margin-top: 7px;
+  margin-top: -77px;
   margin-left: 440px;
   z-index: 2;
   position: absolute;
@@ -323,7 +325,7 @@ left:-9999px;
   width: 26px;
   height: 6px;
   float: left;
-  margin-top: 7px;
+  margin-top: -77px;
   z-index: 2;
   position: absolute;
 }
@@ -332,7 +334,7 @@ left:-9999px;
   height: 481px;
 }
 .header__slider__points {
-  margin-top: -40px;
+  margin-top: -140px;
   margin-left: 40%;
   margin-right: 50%;
 }
@@ -640,7 +642,7 @@ header {
   height: 733px;
 }
 .header__slider__points {
-  margin-top: 0px;
+  margin-top: -100px;
   margin-bottom: 67px;
   margin-left: 50%;
   margin-right: 50%;
@@ -963,7 +965,7 @@ max-width: 960px;
   height: 781px;
 }
 .header__slider__points {
-  margin-top: 92px;
+  margin-top: 0px;
   margin-bottom: 67px;
   margin-left: 73.5%;
   margin-right: 17%;
