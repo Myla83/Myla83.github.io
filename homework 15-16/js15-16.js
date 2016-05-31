@@ -1,26 +1,40 @@
-function GoogleCallback(func, data){
-	window[func](data);
+/*var API_KEY = '2591951-51ea37382264aef0ecc9d089f';
+var URL = "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent('red roses');
+$.getJSON(URL, function(data){
+	if (parseInt(data.totalHits) > 0)
+			$.each(data.hits, function(i, hit){
+				console.log(hit.pageURL);
+			});
+	else
+			console.log('No hits');
+});*/
+function PixabayCallback(func, data){
+	window[func] (data);
 };
 
-$(function() {
-$('form').on('submit', function(){
-    $.ajax({
-    	url: "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=large&q="+ encodeURIComponent($('.search').val()) + "&callback=GoogleCallback&context=?",
-    	dataType: 'jsonp',
-    	success: function(data) {
-    		var ul = document.createElement('ul');
-    		$.each(data.results, function(i, val) {
-    			var li = document.createElement('li');
-    			li.innerHTML = '<a href="'+val.url+'" title="'+val.url+'" target="_blank">'+val.title+"</a> - "+val.content;
-    			ul.appendChild(li);
-    		});
-    		$('.results').html(ul);
-    	}
-    });
-    return false;
+$(function(data) {
+	$('form').on('submit', function(){
+	$.ajax({
+		url: "https://pixabay.com/api/?key="+"2591951-51ea37382264aef0ecc9d089f"+"&q="+encodeURIComponent($('.search').val()) + "&callback=PixabayCallback&context=?",
+    method: 'GET',
+		dataType: 'jsonp',
+		success: function () {
+			var ul = document.createElement('ul');
+			$.each(data.results, function(i, val) {
+				var li = document.createElement('li');
+				li.innerHTML = '<a href="'+val.url+'" title="'+val.url+'" target="_blank">'+val.title+"</a> - "+val.content;
+				ul.appendChild(li);
+			});
+			$('.results').html(ul);
+		},
+			});
+			return false;
+});
 });
 
-});
+
+
+
 
 var human = {
   name: 'Tanya',

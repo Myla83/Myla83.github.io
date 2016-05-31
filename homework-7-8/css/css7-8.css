@@ -115,6 +115,9 @@ header {
   margin-top: -3px;
   height: 470px;
         }
+html:root .header__block {
+  background: #372a3e;
+}
 .header__block li {
   list-style: none;
   background: url(../img/key.png) no-repeat 0 2px;
