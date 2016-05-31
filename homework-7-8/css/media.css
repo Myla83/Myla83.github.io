@@ -523,6 +523,12 @@ header {
 .menu_dropdown {
   transform: scale(0);
   height: 0;
+  //position: absolute;
+  //left: -99999px;
+}
+html:root .menu_dropdown {
+  position: absolute;
+  left: -99999px;
 }
 .menu--home {
   margin-top: 41px;
@@ -856,6 +862,12 @@ max-width: 960px;
 .menu_dropdown {
   transform: scale(0);
   height: 0;
+  //position: absolute;
+  //left: -99999px;
+}
+html:root .menu_dropdown {
+  position: absolute;
+  left: -99999px;
 }
 .menu--home {
   margin-top: -35px;
@@ -1233,4 +1245,12 @@ footer {
 .footer__finish {
   margin: -3.7% 0 0 75%;
 }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0) {
+
+  .menu_dropdown {
+    position: absolute;
+    left: -99999px;
+  }
+
 }
