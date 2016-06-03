@@ -11,7 +11,7 @@ header {
   transform: scale(0);
   height: 0;
 }
-.menu_dropdown li {
+.menu_dropdown  {
   position: relative;
   z-index: 3;
 }
@@ -19,15 +19,15 @@ header {
 list-style: none;
 position: absolute;
 left:-9999px;
-z-index: 3;
+
 }
-.menu_dropdown li:hover ul {
+.menu_dropdown:hover ul {
   left: -41px;
   top: 45px;
   opacity: 1;
   width: 248px;
   position: absolute;
-  z-index: 3;
+
 }
 .menu_dropdown {
   /*width: 215px;*/
@@ -59,7 +59,7 @@ z-index: 3;
 }
 .menu_dropdown li {
   list-style: none;
-  z-index: 3;
+
 }
 .menu_dropdown li:first-child {
   width: 151px;
@@ -167,7 +167,7 @@ max-width: 480px;
 .header__logo {
     margin: 0 34% 0 34%;
 }
-.menu_dropdown li {
+.menu_dropdown  {
   position: relative;
   z-index: 4;
 }
@@ -177,9 +177,9 @@ position: absolute;
 left:-9999px;
 
 }
-.menu_dropdown li:hover ul {
-  left: 35px;
-  top: 25px;
+.menu_dropdown:hover ul {
+  left: 75px;
+  top: 61px;
   opacity: 1;
   /*width: 238px;*/
   z-index: 4;
