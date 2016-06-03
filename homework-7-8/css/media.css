@@ -15,13 +15,13 @@ header {
   position: relative;
   z-index: 3;
 }
-.menu_dropdown ul{
+.menu_dropdown li ul{
 list-style: none;
 position: absolute;
 left:-9999px;
 
 }
-.menu_dropdown:hover ul {
+.menu_dropdown li:hover ul {
   left: -41px;
   top: 45px;
   opacity: 1;
@@ -171,13 +171,13 @@ max-width: 480px;
   position: relative;
   z-index: 4;
 }
-.menu_dropdown ul{
+.menu_dropdown li ul{
 list-style: none;
 position: absolute;
 left:-9999px;
 
 }
-.menu_dropdown:hover ul {
+.menu_dropdown li:hover ul {
   left: 75px;
   top: 61px;
   opacity: 1;
