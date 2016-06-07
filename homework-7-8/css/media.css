@@ -15,6 +15,9 @@ header {
   position: relative;
   z-index: 3;
 }
+.menu_dropdown li {
+  position: relative;
+}
 .menu_dropdown li ul{
 list-style: none;
 position: absolute;
@@ -23,7 +26,7 @@ left:-9999px;
 }
 .menu_dropdown li:hover ul {
   left: -41px;
-  top: 45px;
+  top: 44px;
   opacity: 1;
   width: 248px;
   position: absolute;
@@ -71,7 +74,7 @@ left:-9999px;
 .menu_dropdown .border-home {
   width: 37px;
   border-bottom: 2px solid #edbfff;
-  padding: 0 5px 0px 5px;
+  padding: 5px 5px 0 5px;
   /*margin-left: -100px;*/
 }
 .menu_dropdown .header__home {
@@ -171,6 +174,9 @@ max-width: 480px;
   position: relative;
   z-index: 4;
 }
+.menu_dropdown li {
+  position: relative;
+}
 .menu_dropdown li ul{
 list-style: none;
 position: absolute;
@@ -178,8 +184,8 @@ left:-9999px;
 
 }
 .menu_dropdown li:hover ul {
-  left: 75px;
-  top: 61px;
+  left: 35px;
+  top: 24px;
   opacity: 1;
   /*width: 238px;*/
   z-index: 4;
