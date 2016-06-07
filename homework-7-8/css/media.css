@@ -15,9 +15,7 @@ header {
   position: relative;
   z-index: 3;
 }
-.menu_dropdown li {
-  position: relative;
-}
+
 .menu_dropdown li ul{
 list-style: none;
 position: absolute;
@@ -174,9 +172,7 @@ max-width: 480px;
   position: relative;
   z-index: 4;
 }
-.menu_dropdown li {
-  position: relative;
-}
+
 .menu_dropdown li ul{
 list-style: none;
 position: absolute;
@@ -184,8 +180,8 @@ left:-9999px;
 
 }
 .menu_dropdown li:hover ul {
-  left: 35px;
-  top: 24px;
+  left: 75px;
+  top: 59px;
   opacity: 1;
   /*width: 238px;*/
   z-index: 4;
